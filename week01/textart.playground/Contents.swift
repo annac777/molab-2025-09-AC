@@ -23,4 +23,15 @@ func generateBlock(_ size: Int) {
     }
 }
 
+func generatepattern(_ size: Int) {
+let chars = Array(str)
+for row in 0..<size {
+let ch = chars[row % chars.count]
+let line = String(repeating: ch, count: size)
+print(line)
+}
+}
+
 generateBlock(10)
+
+generatepattern(10)
