@@ -1,0 +1,136 @@
+100 Days of Swift Notes
+
+Day 1
+Var: create a new variable, changeable
+Let:  create a new constant, which cannot be changed
+Camel case: the second and subsequent words in a name start with a little bump for the capital letter
+
+count: count number of strings
+uppercased(): turn letters into uppercased
+hasPrefix(): whether a string starts with some letters of our choosing:
+hasSuffix(): checks whether a string ends with some text:
+
+isMultiple(of:): find out whether it’s a multiple of another integer.
+
+Double: a floating-point number
+let a = 1
+let b = 2.0
+let c = a + b
+let c = a + Int(b)
+let c = Double(a) + b
+
+
+Day 2
+hasSuffix() and isMultiple(of:): return a new value based on their check, either the string has the suffix or it doesn’t, and either X is a multiple of Z or it isn’t
+toggle() : flip a true value to false
+
+\(): putting the string and integer
+
+String(number)
+
+
+Day 3
+append(): add new items to the array
+Array<Int>(): specialized array type, making it an array that holds integers
+.count: read how many items are in an array
+remove(at:): remove one item at a specific index
+removeAll(): remove everything
+contains(): check whether an array contains a particular item
+sorted(): returns a new array with its items sorted in ascending order(alphabetically for strings but numerically for numbers)
+reversed(): everse an array
+
+let employee2 = [
+    "name": "Taylor Swift",
+    "job": "Singer", 
+    "location": "Nashville"
+]
+print(employee2["name", default: "Unknown"])
+print(employee2["job", default: "Unknown"])
+print(employee2["location", default: "Unknown"])
+
+let people = Set(["Denzel Washington", "Tom Cruise", "Nicolas Cage", "Samuel L Jackson"])
+var people = Set<String>()
+people.insert("Denzel Washington")
+people.insert("Tom Cruise")
+people.insert("Nicolas Cage")
+people.insert("Samuel L Jackson")
+count: read the number of items in a set
+sorted(): return a sorted array containing the the set’s items
+
+Sets do not contain duplicate items
+
+enum Weekday {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+}
+
+var day = Weekday.monday
+day = Weekday.tuesday
+day = Weekday.friday
+
+var day = Weekday.monday
+day = .tuesday
+day = .friday
+
+
+Day 4
+let surname: String = "Lasso"
+var score: Int = 0
+*surname must be a string, and score must be an integer
+
+Examples:
+let playerName: String = "Roy"
+var luckyNumber: Int = 13
+let pi: Double = 3.141
+var isAuthenticated: Bool = true
+var albums: [String] = ["Red", "Fearless"]
+var user: [String: String] = ["id": "@twostraws"]
+var books: Set<String> = Set(["The Bluest Eye", "Foundation", "Girl, Woman, Other"])
+var soda: [String] = ["Coke", "Pepsi", "Irn-Bru"]
+var teams: [String] = [String]()
+var cities: [String] = []
+var clues = [String]()
+
+
+Day 5
+if numbers.count > 3
+if name != "Anonymous" 
+if temp > 20 && temp < 30
+&&: “and”, “if temp is greater than 20 and temp is less than 30, print a message.”
+||: “or”
+
+switch: checking conditions
+efault: run if all cases have failed to match
+fallthrough: help you avoid repeating work
+
+Day 6 
+1...12: a range, 1 through 12
+..<: counts up to but excluding the final number
+while: continually execute the loop body until the condition is false
+continue: skips the current loop iteration
+break: skips all remaining iterations
+
+Day 7
+func printTimesTables(number: Int) {
+    for i in 1...12 {
+        print("\(i) x \(number) is \(i * number)")
+    }
+}
+
+printTimesTables(number: 5)
+
+parameter: customization point
+sqrt(): accepts one parameter
+return: send back your data
+pythagoras: two Double parameters and returns another Double
+
+func getUser() -> (firstName: String, lastName: String) {
+    (firstName: "Taylor", lastName: "Swift")
+}
+
+let user = getUser()
+print("Name: \(user.firstName) \(user.lastName)")
+
