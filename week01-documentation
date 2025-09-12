@@ -1,6 +1,6 @@
 100 Days of Swift Notes
 
-Day 1
+Day 1 (30 mins)
 Var: create a new variable, changeable
 Let:  create a new constant, which cannot be changed
 Camel case: the second and subsequent words in a name start with a little bump for the capital letter
@@ -20,7 +20,7 @@ let c = a + Int(b)
 let c = Double(a) + b
 
 
-Day 2
+Day 2 (20 mins)
 hasSuffix() and isMultiple(of:): return a new value based on their check, either the string has the suffix or it doesn’t, and either X is a multiple of Z or it isn’t
 toggle() : flip a true value to false
 
@@ -29,7 +29,7 @@ toggle() : flip a true value to false
 String(number)
 
 
-Day 3
+Day 3 (40 mins)
 append(): add new items to the array
 Array<Int>(): specialized array type, making it an array that holds integers
 .count: read how many items are in an array
@@ -76,7 +76,7 @@ day = .tuesday
 day = .friday
 
 
-Day 4
+Day 4 (20 mins)
 let surname: String = "Lasso"
 var score: Int = 0
 *surname must be a string, and score must be an integer
@@ -95,7 +95,7 @@ var cities: [String] = []
 var clues = [String]()
 
 
-Day 5
+Day 5 (20 mins)
 if numbers.count > 3
 if name != "Anonymous" 
 if temp > 20 && temp < 30
@@ -106,14 +106,14 @@ switch: checking conditions
 efault: run if all cases have failed to match
 fallthrough: help you avoid repeating work
 
-Day 6 
+Day 6 (20 mins)
 1...12: a range, 1 through 12
 ..<: counts up to but excluding the final number
 while: continually execute the loop body until the condition is false
 continue: skips the current loop iteration
 break: skips all remaining iterations
 
-Day 7
+Day 7 (30 mins)
 func printTimesTables(number: Int) {
     for i in 1...12 {
         print("\(i) x \(number) is \(i * number)")
