@@ -35,3 +35,5 @@ func generatepattern(_ size: Int) {
 generateBlock(10)
 
 generatepattern(10)
+
+// JHT: what code is from class example?
