@@ -37,3 +37,4 @@ generateBlock(10)
 generatepattern(10)
 
 // JHT: what code is from class example?
+// JHT: let chars = Array(str) // is this a better version of func charAt?
